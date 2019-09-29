@@ -1,8 +1,3 @@
-# ols-iv-fe-intro
-
-This repo provides a brief introduction to OLS, IV, and FE.
-
-```stata
 * ols
 cd I:\STATA15ANZHUANG\ado\plus\junior
 use grilic.dta, clear
@@ -190,9 +185,3 @@ ivreg2 lw s expr tenure rns smsa (iq = med kww), r redundant (kww)
 ivreg2 lw s expr tenure rns smsa (iq = med kww), r endog(iq)  //endog(iq)表示检验变量iq是否为内生变量
 *如果存在异方差，则GMM比2SLS更有效率
 ivreg2 lw s expr tenure rns smsa (iq = med kww), gmm2s robust
-```
-
-## 参考文献
-
-> 陈强，*计量经济学与Stata的应用*，2013.
-
